@@ -1,5 +1,5 @@
 <?php
-
+require ("Carro.php");
 class fruta {
     public $nome;
     public $cor;
@@ -29,8 +29,15 @@ class fruta {
 
 
 $maca = new fruta('maçã',"vermelho");
-//$banana = new fruta();
-//$mamao =  new fruta();
+$banana = new fruta("Banana","Amarela");
+$mamao =  new fruta("Mamão","Laranja");
+
+$carro1 = new Carro("Hyndai","HB20",2015);
+$carro2 = new Carro("Volkswaggen","Fusca",1974);
+
+echo "<br> Carro 1 <br> - modelo " .$carro1->get_modelo(). "<br> - ano " .$carro1->get_ano(). "<br> - marca " .$carro1->get_marca() ."<br>";
+
+echo "<br> Carro 2 <br> - modelo " .$carro2->get_modelo(). "<br> - ano " .$carro2->get_ano(). "<br> - marca " .$carro2->get_marca() ."<br>";
 
 //$maca->set_nome("maçã");
 //$maca->set_cor("vermelho");

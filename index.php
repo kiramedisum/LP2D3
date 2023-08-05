@@ -1,5 +1,6 @@
 <?php
 require ("Carro.php");
+require ("retangulo.php");
 class fruta {
     public $nome;
     public $cor;
@@ -35,14 +36,20 @@ $mamao =  new fruta("Mamão","Laranja");
 $carro1 = new Carro("Hyndai","HB20",2015);
 $carro2 = new Carro("Volkswaggen","Fusca",1974);
 
+echo "<br>" .$maca->get_nome() ."<br>";
+echo "<br>" .$maca->get_cor() ."<br>";
+
 echo "<br> Carro 1 <br> - modelo " .$carro1->get_modelo(). "<br> - ano " .$carro1->get_ano(). "<br> - marca " .$carro1->get_marca() ."<br>";
 
 echo "<br> Carro 2 <br> - modelo " .$carro2->get_modelo(). "<br> - ano " .$carro2->get_ano(). "<br> - marca " .$carro2->get_marca() ."<br>";
 
+$retangulo1 = new retangulo(2,4);
+
+echo "<br> Area: " .$retangulo1->calc_area() ."<br> Perimetro: " .$retangulo1->calc_perimetro() ."<br>";
+
 //$maca->set_nome("maçã");
 //$maca->set_cor("vermelho");
-echo "<br>" .$maca->get_nome();
-echo "<br>" .$maca->get_cor();
+
 
 
 

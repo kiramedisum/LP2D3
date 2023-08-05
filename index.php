@@ -1,6 +1,7 @@
 <?php
 require ("Carro.php");
 require ("retangulo.php");
+require ("pessoa.php");
 class fruta {
     public $nome;
     public $cor;
@@ -46,6 +47,10 @@ echo "<br> Carro 2 <br> - modelo " .$carro2->get_modelo(). "<br> - ano " .$carro
 $retangulo1 = new retangulo(2,4);
 
 echo "<br> Area: " .$retangulo1->calc_area() ."<br> Perimetro: " .$retangulo1->calc_perimetro() ."<br>";
+
+$pessoa1 = new pessoa("Jorge",12,"Estudante");
+
+echo "<br> Pessoa 1: " .$pessoa1->apres();
 
 //$maca->set_nome("maçã");
 //$maca->set_cor("vermelho");
